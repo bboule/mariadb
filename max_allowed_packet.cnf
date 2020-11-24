@@ -1,2 +1,13 @@
-[mysqld]
-max_allowed_packet = 64M
+apiVersion: v1
+data:
+  max_allowed_packet.cnf: |
+    [mysqld]
+    max_allowed_packet = 32M
+kind: ConfigMap
+metadata:
+  creationTimestamp: 2019-05-30T12:02:22Z
+  name: mariadb-config
+  namespace: secrets-and-configmaps
+  resourceVersion: "85609912"
+  selfLink: /api/v1/namespaces/secrets-and-configmaps/configmaps/mariadb-config
+  uid: c83ccfae-82d2-11e9-832f-005056a1102f
