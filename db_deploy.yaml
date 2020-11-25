@@ -5,7 +5,7 @@ metadata:
     app: mariadb
   name: mariadb-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: mariadb
